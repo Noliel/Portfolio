@@ -9,11 +9,11 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   return (
     <Layout>
-      <AnimatePresence>
-        <div>
-          
-        </div>
-        <Component {...pageProps} />
+      <AnimatePresence mode='wait'>
+        <motion.div key={router.route} className='h-full'>
+          <Transition />
+          <Component {...pageProps} />
+        </motion.div>
       </AnimatePresence>
     </Layout>
   )
