@@ -6,13 +6,11 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaWordpress,
   FaFigma,
 } from "react-icons/fa";
 
 import {
   SiNextdotjs,
-  SiFramer,
   SiAdobexd,
   SiAdobephotoshop,
 } from "react-icons/si";
@@ -25,17 +23,7 @@ const aboutData = [
     info: [
       {
         title: 'Web Development',
-        icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-        ],
-      },
-      {
-        title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        message: 'HTML || CSS ||'
       },
     ],
   },
@@ -84,12 +72,14 @@ const About = () => {
               <div key={itemIndex}
               className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'
               >
+                
                 <div className='font-light mb02 md:mb-0'>{item.title}</div>
                 <div className='hidden md:flex'>-</div>
+                <p className='font-semibold'>HTML 5 // JAVASCRIPT // NEXT.JS // TYPESCRIPT // TAILWINDCSS</p>
                 <div>{item.stage}</div>
                 <div className='flex gap-x-4'>
                     {item.icons?.map((icon, itemIndex) => {
-                      return <div className='text-2xl text-white'>{icon}</div>
+                      return
                     })}
                 </div>
               </div>
