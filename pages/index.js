@@ -17,7 +17,7 @@ const Home = () => {
         animate='show'
         exit='hidden'
         className='h1'>
-          Transforming Ideas <br /> Into <span className='text-accent'>Digital Reality</span>
+          I'm <br />  <span className='text-accent'>NOLIBERT ELIGAN</span>
         </motion.h1>
         <motion.p 
         variants={fadeIn('down', 0.3)}
@@ -25,8 +25,7 @@ const Home = () => {
         animate='show'
         exit='hidden'
         className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'>
-          Lorem ipsum
-          lorem ipsum
+          Aspiring Web Developer
         </motion.p>
         <div className='flex justify-center xl:hidden relative'>
           <ProjectBtn />

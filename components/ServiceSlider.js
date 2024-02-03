@@ -5,7 +5,9 @@ import {
   RxDesktop,
   RxReader,
   RxRocket,
+  RxArrowTopRight,
 } from "react-icons/rx";
+import Swiper from "swiper";
 
 
 // data
@@ -37,8 +39,13 @@ const serviceData = [
   },
 ];
 
-const ServiceSlider = () => {
-  return <div>Service Slider</div>;
-};
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
+
+
+function ServiceSlider() {
+  return
+}
 
 export default ServiceSlider;
